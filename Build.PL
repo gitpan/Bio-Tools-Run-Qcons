@@ -22,7 +22,7 @@ my %module_build_args = (
     "Bruno Vecchi <vecchi.b gmail.com>"
   ],
   "dist_name" => "Bio-Tools-Run-Qcons",
-  "dist_version" => "0.112880",
+  "dist_version" => "0.112881",
   "license" => "perl",
   "module_name" => "Bio::Tools::Run::Qcons",
   "recommends" => {},
@@ -30,7 +30,7 @@ my %module_build_args = (
   "requires" => {
     "Capture::Tiny" => 0,
     "File::Temp" => 0,
-    "File::Which" => 0,
+    "IPC::Cmd" => 0,
     "Mouse" => 0,
     "Mouse::Util::TypeConstraints" => 0,
     "autodie" => 0,

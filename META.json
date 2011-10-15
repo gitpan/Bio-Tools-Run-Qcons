@@ -28,7 +28,7 @@
          "requires" : {
             "Capture::Tiny" : 0,
             "File::Temp" : 0,
-            "File::Which" : 0,
+            "IPC::Cmd" : 0,
             "Mouse" : 0,
             "Mouse::Util::TypeConstraints" : 0,
             "autodie" : 0,
@@ -55,6 +55,6 @@
          "web" : "http://github.com/brunoV/qcons"
       }
    },
-   "version" : "0.112880"
+   "version" : "0.112881"
 }
 

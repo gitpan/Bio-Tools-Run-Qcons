@@ -1,6 +1,6 @@
 package Bio::Tools::Run::QCons;
 {
-  $Bio::Tools::Run::QCons::VERSION = '0.112880';
+  $Bio::Tools::Run::QCons::VERSION = '0.112881';
 }
 
 # ABSTRACT: Run Qcons to analyze protein-protein contacts
@@ -229,7 +229,7 @@ Bio::Tools::Run::QCons - Run Qcons to analyze protein-protein contacts
 
 =head1 VERSION
 
-version 0.112880
+version 0.112881
 
 =head1 SYNOPSIS
 
@@ -237,8 +237,9 @@ version 0.112880
        file => $pdbfile,
        chains => [$chain1, $chain2],
    );
+
    my $contacts_by_atom = $q->atom_contacts;
-   $contacts_by_residue = $q->residue_contacts;
+   my $contacts_by_residue = $q->residue_contacts;
 
 =head1 DESCRIPTION
 
@@ -299,7 +300,8 @@ to anything at construction time:
    my $q = Bio::Tools::Run::QCons->new(
        program_name => 'qcons',
        file => $pdbfile,
-       chains => [$chain1, $chain2],
+       chains => [$chain1, $chain2]
+   );
 
 Notice that if the binary is not on your PATH environment variable, you
 should give C<program_name> a full path to it.
