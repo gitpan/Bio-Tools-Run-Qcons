@@ -27,6 +27,7 @@
       "runtime" : {
          "requires" : {
             "Capture::Tiny" : 0,
+            "File::Spec" : 0,
             "File::Temp" : 0,
             "IPC::Cmd" : 0,
             "Mouse" : 0,
@@ -40,14 +41,13 @@
       "test" : {
          "requires" : {
             "File::Copy" : 0,
-            "File::Spec" : 0,
             "FindBin" : 0,
             "Test::Exception" : 0,
             "Test::More" : 0
          }
       }
    },
-   "release_status" : "stable",
+   "release_status" : "testing",
    "resources" : {
       "repository" : {
          "type" : "git",
@@ -55,6 +55,6 @@
          "web" : "http://github.com/brunoV/qcons"
       }
    },
-   "version" : "0.112881"
+   "version" : "0.112900"
 }
 

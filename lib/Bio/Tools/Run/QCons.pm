@@ -1,6 +1,6 @@
 package Bio::Tools::Run::QCons;
 {
-  $Bio::Tools::Run::QCons::VERSION = '0.112881';
+  $Bio::Tools::Run::QCons::VERSION = '0.112900'; # TRIAL
 }
 
 # ABSTRACT: Run Qcons to analyze protein-protein contacts
@@ -10,6 +10,7 @@ use autodie;
 use namespace::autoclean;
 use Capture::Tiny 'capture_merged';
 use Bio::Tools::Run::QCons::Types 'Executable';
+use File::Spec;
 
 has 'program_name' => (
     is      => 'ro',
@@ -77,7 +78,8 @@ sub _build__result {
     my $arguments;
     my $executable = $self->program_name;
 
-    $self->_arguments->{-prefOut} = $self->_temp_dir->dirname . '/';
+    $self->_arguments->{-prefOut} =
+      File::Spec->catfile( $self->_temp_dir->dirname, '' );
 
     my $output = capture_merged {
         system( $executable, %{ $self->_arguments } )
@@ -108,7 +110,8 @@ sub _parse_by_residue {
     my @contacts;
 
     # Get the path to the output file.
-    my $filename = $self->_arguments->{-prefOut} . '/-by-res.vor';
+    my $filename =
+      File::Spec->catfile( $self->_arguments->{-prefOut}, '-by-res.vor' );
 
     open( my $fh, '<', $filename );
 
@@ -143,7 +146,8 @@ sub _parse_by_atom {
     my @contacts;
 
     # Get the path to the output file.
-    my $filename = $self->_arguments->{-prefOut} . '/-by-atom.vor';
+    my $filename =
+      File::Spec->catfile( $self->_arguments->{-prefOut}, '-by-atom.vor' );
 
 
     open( my $fh, '<', $filename );
@@ -229,7 +233,7 @@ Bio::Tools::Run::QCons - Run Qcons to analyze protein-protein contacts
 
 =head1 VERSION
 
-version 0.112881
+version 0.112900
 
 =head1 SYNOPSIS
 
