@@ -2,7 +2,7 @@ NAME
     Bio::Tools::Run::QCons - Run Qcons to analyze protein-protein contacts
 
 VERSION
-    version 0.112900
+    version 0.112990
 
 SYNOPSIS
        my $q = Bio::Tools::Run::QCons->new(

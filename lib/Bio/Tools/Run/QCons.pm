@@ -1,6 +1,6 @@
 package Bio::Tools::Run::QCons;
 {
-  $Bio::Tools::Run::QCons::VERSION = '0.112900'; # TRIAL
+  $Bio::Tools::Run::QCons::VERSION = '0.112990'; # TRIAL
 }
 
 # ABSTRACT: Run Qcons to analyze protein-protein contacts
@@ -233,7 +233,7 @@ Bio::Tools::Run::QCons - Run Qcons to analyze protein-protein contacts
 
 =head1 VERSION
 
-version 0.112900
+version 0.112990
 
 =head1 SYNOPSIS
 

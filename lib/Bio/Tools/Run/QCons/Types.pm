@@ -1,6 +1,6 @@
 package Bio::Tools::Run::QCons::Types;
 {
-  $Bio::Tools::Run::QCons::Types::VERSION = '0.112900'; # TRIAL
+  $Bio::Tools::Run::QCons::Types::VERSION = '0.112990'; # TRIAL
 }
 
 # ABSTRACT: Type library for Bio::Tools::Run::QCons
@@ -37,7 +37,7 @@ Bio::Tools::Run::QCons::Types - Type library for Bio::Tools::Run::QCons
 
 =head1 VERSION
 
-version 0.112900
+version 0.112990
 
 =head1 AUTHOR
 

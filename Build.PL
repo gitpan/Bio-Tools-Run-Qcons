@@ -21,7 +21,7 @@ my %module_build_args = (
     "Bruno Vecchi <vecchi.b gmail.com>"
   ],
   "dist_name" => "Bio-Tools-Run-Qcons",
-  "dist_version" => "0.112900",
+  "dist_version" => "0.112990",
   "license" => "perl",
   "module_name" => "Bio::Tools::Run::Qcons",
   "recommends" => {},
